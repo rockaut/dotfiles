@@ -1,0 +1,10 @@
+set smooth
+set autoindent
+set historylog
+set morespace
+set tabsize 4
+set tabstospaces
+set nohelp
+set linenumbers
+set constantshow
+set smarthome
