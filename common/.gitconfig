@@ -1,0 +1,14 @@
+[core]
+  excludesFile = ~/.gitignore.global
+  autocrlf = false
+
+[pull]
+  rebase = false
+
+[include]
+  path = ~/.gitconfig.local
+
+[includeIf "gitdir/i:~/code/personal"]
+  path = ~/.gitconfig.personal
+[includeIf "gitdir/i:~/code/work"]
+  path = ~/.gitconfig.work

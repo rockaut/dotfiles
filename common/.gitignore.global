@@ -1,0 +1,27 @@
+# Common
+.env
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# WebStorm
+.idea/
+
+# vi
+*~
+
+# General
+log/
+*.log
+
+# Python
+**/venv
+venv/
+
+# ansible
+**/.vault_pass
+**/vault
+**/*.vault
