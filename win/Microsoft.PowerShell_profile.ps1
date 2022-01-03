@@ -5,6 +5,6 @@ if ( ! (Test-Path alias:wget) ) { set-alias -name wget -value Invoke-WebRequest 
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
-if ( (Test-Path $Env:USERPROFILE\.local\bin\starship) ) {
+if ( (Test-Path $Env:USERPROFILE\.local\bin\starship.exe) ) {
   Invoke-Expression (&starship init powershell)
 }

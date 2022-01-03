@@ -18,6 +18,6 @@ git clone git@github.com:rockaut/dotfiles.git ~/code/personal/dotfiles
 ```
 
 ```pwsh
-New-Item -Type Directory -Force -Path $env:USERPROFILE\code\personal
-git clone git@github.com:rockaut/dotfiles.git $env:USERPROFILE\code\personal\dotfiles
+New-Item -Type Directory -Force -Path $env:USERPROFILE\documents\code\personal
+git clone git@github.com:rockaut/dotfiles.git $env:USERPROFILE\documents\code\personal\dotfiles
 ```
