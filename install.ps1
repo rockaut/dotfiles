@@ -5,7 +5,7 @@ Invoke-WebRequest -Uri https://github.com/starship/starship/releases/download/$l
 Expand-Archive -Force -Path $env:TEMP\starship.zip -DestinationPath $env:USERPROFILE\.local\bin\
 Remove-Item -Path $env:TEMP\starship.zip
 
-Copy-Item -Verbose -Path $env:USERPROFILE\documents\code\personal\dotfiles\common\* -Destination $env:USERPROFILE\
+Copy-Item -Verbose -Path $env:USERPROFILE\code\personal\dotfiles\common\* -Destination $env:USERPROFILE\
 
-Copy-Item -Verbose -Path $env:USERPROFILE\documents\code\personal\dotfiles\win\Microsoft.PowerShell_profile.ps1 $PROFILE
-Copy-Item -Verbose -Path $env:USERPROFILE\documents\code\personal\dotfiles\win\terminal.settings.json $env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
+Copy-Item -Verbose -Path $env:USERPROFILE\code\personal\dotfiles\win\Microsoft.PowerShell_profile.ps1 $PROFILE
+Copy-Item -Verbose -Path $env:USERPROFILE\code\personal\dotfiles\win\terminal.settings.json $env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json
