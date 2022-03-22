@@ -14,3 +14,5 @@ wget https://github.com/extrawurst/gitui/releases/download/v${GITUI_VERSION}/git
 
 YQ_VERSION=$(curl --silent https://github.com/mikefarah/yq/releases/latest | tr -d '"' | sed 's/^.*tag\///g' | sed 's/>.*$//g' | sed 's/^v//')
 wget https://github.com/mikefarah/yq/releases/download/v${YQ_VERSION}/yq_linux_amd64 -O ~/.local/bin/yq && chmod +x ~/.local/bin/yq
+
+curl -sLS https://get.arkade.dev | sudo sh
