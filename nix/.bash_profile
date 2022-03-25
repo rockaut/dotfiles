@@ -17,7 +17,7 @@ shopt -s cdspell
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$HOME/.local/bin:$PATH";
+export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.arkade/bin:$PATH";
 
 # ###########################################################################################
 # A L I A S E S
