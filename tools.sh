@@ -5,7 +5,7 @@ sudo apt update && sudo apt install -y \
          sshpass \
          ncdu tree mc \
          jq \
-         wget curl
+         wget gnupg software-properties-common curl
 
 python3 -m pip install --upgrade pip wheel
 
@@ -16,3 +16,7 @@ YQ_VERSION=$(curl --silent https://github.com/mikefarah/yq/releases/latest | tr 
 wget https://github.com/mikefarah/yq/releases/download/v${YQ_VERSION}/yq_linux_amd64 -O ~/.local/bin/yq && chmod +x ~/.local/bin/yq
 
 curl -sLS https://get.arkade.dev | sudo sh
+
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-get update && sudo apt-get install terraform
